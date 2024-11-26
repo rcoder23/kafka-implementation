@@ -23,6 +23,7 @@ public class LocationController {
         for(int i=1;i<=10000;i++) {
             this.kafkaService.updateLocation("(" + Math.round(Math.random() * 100) + " ," + Math.round(Math.random() * 100) + " )");
         }
+        System.out.print("push from intellij idea");
         return  new ResponseEntity<>(Map.of("message","locatio updated"), HttpStatus.OK);
     }
 }
